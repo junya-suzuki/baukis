@@ -45,6 +45,7 @@ class Admin::StaffMembersController < Admin::Base
   end
 
   private
+
   def staff_member_params
     params.require(:staff_member).permit(
       :email, :password, :family_name, :given_name,
